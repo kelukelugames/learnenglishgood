@@ -5,13 +5,22 @@ $(document).ready(function() {
 	var table = document.getElementById("wordsTable");
 	var maxArrayLength = Math.max(goodWords.length, badWords.length)
 
+
+	var row = table.insertRow(0);
+
+	var cell1 = row.insertCell(0);
+	var cell2 = row.insertCell(1);
+
+	cell1.innerHTML = "Finished";
+	cell2.innerHTML = "In Progress";
+
 	for (var i = 0; i < maxArrayLength; i++) {
-		var row = table.insertRow(i);
+		var row = table.insertRow(i + 1);
 
 		var cell1 = row.insertCell(0);
 		cell1.classList.add("good");
 		var cell2 = row.insertCell(1);
-		cell1.classList.add("bad");
+		cell2.classList.add("bad");
 
 		cell1.innerHTML = (i < goodWords.length) ? createHTML(goodWords[i]) : "";
 		cell2.innerHTML = (i < badWords.length) ? createHTML(badWords[i]) : "";
