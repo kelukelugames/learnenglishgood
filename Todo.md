@@ -7,7 +7,7 @@
   * ~~build table from list of words~~
   * ~~link to sound~~
   * ~~get a sound icon~~
-  * **format**
+  * ~~format~~
   * **check if word is mispelled**
 
 
