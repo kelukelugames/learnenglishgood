@@ -9,5 +9,6 @@
   * ~~get a sound icon~~
   * ~~format~~
   * **check if word is mispelled**
+  * **test on mobile**
 
 
