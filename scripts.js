@@ -3,16 +3,16 @@ var badWords = ["yogurt", "moat", "gopher", "moped", "twelve", "fish"];
 
 $(document).ready(function() {
 	var table = document.getElementById("wordsTable");
+    var header = table.createTHead();
+	var firstRow = header.insertRow(0);
+
+	var firstRowCell1 = firstRow.insertCell(0);
+	var firstRowCell2 = firstRow.insertCell(1);
+
+	firstRowCell1.innerHTML = "Finished";
+	firstRowCell2.innerHTML = "In Progress";
+
 	var maxArrayLength = Math.max(goodWords.length, badWords.length)
-
-
-	var row = table.insertRow(0);
-
-	var cell1 = row.insertCell(0);
-	var cell2 = row.insertCell(1);
-
-	cell1.innerHTML = "Finished";
-	cell2.innerHTML = "In Progress";
 
 	for (var i = 0; i < maxArrayLength; i++) {
 		var row = table.insertRow(i + 1);
@@ -38,11 +38,3 @@ function playSound(word) {
 	var audio = new Audio("https://ssl.gstatic.com/dictionary/static/sounds/de/0/" + word + ".mp3");
 audio.play();
 }
-//
-
-/*
-div on click 
-get ids of div
-calls a funcion
-
-*/
