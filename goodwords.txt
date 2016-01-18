@@ -1,9 +1,10 @@
-man
-men
 woman
 women
-colony
-colonial
+man
+men
 tyrant
-tryanny
-tryannical
+tyranny
+tyrannical
+colonial
+colony
+enunciate
