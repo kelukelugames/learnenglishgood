@@ -6,17 +6,8 @@
 	color: #003300;
 }
 
-.buttonDiv {
+.git-button {
 	float:right;
-}
-
-.outerDiv {
-	width: 100%;
-}
-
-.tableDiv {
-	width: 50%;
-	margin: 0 auto;
 }
 
 table {
@@ -42,4 +33,10 @@ td {
 
 body {
     background-image: url("restaurant.png");
+}
+
+.center-table
+{
+  margin: 0 auto !important;
+  float: none !important;
 }
