@@ -40,3 +40,7 @@ body {
   margin: 0 auto !important;
   float: none !important;
 }
+
+img {
+	margin: 4px;
+}
