@@ -38,9 +38,13 @@ function createHTML(word) {
 }
 
 function playSound(word) {
-	var audio = new Audio("https://ssl.gstatic.com/dictionary/static/sounds/de/0/" + word + ".mp3");
-	debugger;
+	var link = getAudioLink(word);
+	var audio = new Audio(link);
 	audio.play();
+}
+
+function getAudioLink(word) {
+	return "https://ssl.gstatic.com/dictionary/static/sounds/de/0/" + word + ".mp3";
 }
 
 function readWordsFromFilepath(filepath) {
