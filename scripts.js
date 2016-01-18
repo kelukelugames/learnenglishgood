@@ -1,4 +1,4 @@
-
+var audios = {}; //stores audio objects so you don't have to load them again.
 
 $(document).ready(function() {
 	var goodWords = readWordsFromFilepath ("https://raw.githubusercontent.com/kelukelugames/pronounceenglishwords/master/goodwords.txt");
@@ -37,9 +37,14 @@ function createHTML(word) {
 }
 
 function playSound(word) {
-	var link = getAudioLink(word);
-	var audio = new Audio(link);
-	audio.play();
+	if (audios.hasOwnProperty(word)) {
+		audios[word].play();
+	} else {
+		var link = getAudioLink(word);
+		var audio = new Audio(link);
+		audio.play();
+		audios[words] = audio;
+	}
 }
 
 function getAudioLink(word) {
