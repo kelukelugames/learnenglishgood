@@ -12,8 +12,8 @@ $(document).ready(function() {
 	var firstRowCell1 = firstRow.insertCell(0);
 	var firstRowCell2 = firstRow.insertCell(1);
 
-	firstRowCell1.innerHTML = "Finished";
-	firstRowCell2.innerHTML = "In Progress";
+	firstRowCell1.innerHTML = "Finished " + "<img src='soundicon.png'>";
+	firstRowCell2.innerHTML = "In Progress " + "<img src='soundicon.png'>";
 
 	var maxArrayLength = Math.max(goodWords.length, badWords.length)
 
@@ -31,9 +31,8 @@ $(document).ready(function() {
 });
 
 function createHTML(word) {
-	return "<div>" + word +
-				" <img src='soundicon.png'" +
-					"onClick='playSound(\"" + word + "\")'>" +
+	return "<div " +  "onClick='playSound(\"" + word + "\")'>"  + 
+				word +
 			"</div>";
 }
 
