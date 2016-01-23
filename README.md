@@ -9,7 +9,7 @@ The progress I made is so noticeable that I feel silly for not starting earlier.
 
 I also keep a randomly ordered list of the old words to practice and prevent regression.
 
-<a href="https://www.kelukelu.me/learnenglishgood">Link to site.</a>
+<a href="http://www.kelukelu.me/learnenglishgood">Link to site.</a>
 
 ### Future work
  1. I use google.com for the sound files, but google doesn't support all words. Need to find a source that has more words.
