@@ -1,13 +1,9 @@
 accurate
-articulate
 hold
-incident
-incidents
-instance
-instances
 wolf
 anesthesiologist
 manipulate
+inferiority
 months
 baths
 civilians
@@ -23,4 +19,4 @@ jam
 road
 row
 myriad
-inferiority
+articulate
